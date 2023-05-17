@@ -75,7 +75,7 @@
     const botaoAnteriorMobile = document.getElementById('before-mobile');
     const botaoProximoMobile = document.getElementById('after-mobile');
     const image = document.getElementById('people-mobile');
-    const images = ['./../assets/seq_butons_mobile_desktop/sequencia_de_fotos_02_mobile.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_03_mobile.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_04_mobile.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_05_mobile.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_01_mobile.png'];
+    const images = ['sequencia_de_fotos_02_mobile.png', 'sequencia_de_fotos_03_mobile.png', 'sequencia_de_fotos_04_mobile.png', 'sequencia_de_fotos_05_mobile.png', 'sequencia_de_fotos_01_mobile.png'];
     let indi = 0;
 
     botaoAnteriorMobile.addEventListener('click', function () {
