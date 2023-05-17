@@ -817,8 +817,9 @@ address{
     .txt{
         display: block;
         margin-left: 20px;
-        width: 50%;
+        width: 70%;
         display: flex;
+   
     
     }
     .text-container{
@@ -836,6 +837,8 @@ address{
     .text-container a{
         width: 100%;
         margin: 50px 0;
+        font-family: "nu";
+ 
     }
 
     .text-container h2{
@@ -865,6 +868,7 @@ address{
         letter-spacing: 1px;
         font-size: min(35px, 4vmin);
         opacity: 1;
+
     }
     
  
