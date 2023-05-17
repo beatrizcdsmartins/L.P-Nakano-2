@@ -40,7 +40,7 @@
     const botaoAnterior = document.getElementById('before');
     const botaoProximo = document.getElementById('after');
     const imagem = document.getElementById('people');
-    const imagens = ['./../assets/seq_butons_mobile_desktop/sequencia_de_fotos_01.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_03.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_04.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_05.png', './../assets/seq_butons_mobile_desktop/sequencia_de_fotos_02.png'];
+    const imagens = ['./assets/seq_butons_mobile_desktop/sequencia_de_fotos_01.png', './assets/seq_butons_mobile_desktop/sequencia_de_fotos_03.png', './assets/seq_butons_mobile_desktop/sequencia_de_fotos_04.png', './assets/seq_butons_mobile_desktop/sequencia_de_fotos_05.png', './assets/seq_butons_mobile_desktop/sequencia_de_fotos_02.png'];
     const paragrafos = document.querySelectorAll('.texts-arrows p')
     let indice = 0;
     paragrafos[indice].classList.add('active');
