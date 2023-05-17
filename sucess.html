@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Sucesso!</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+        
+        <div id="thank-you-message" class="hidden">
+            <p >OBRIGADO!</p>
+            <p>Em breve, entraremos em contato com você!</p>
+            <p>Nossas quadras estão te esperando!</p>
+
+        </div> 
+
+        <a href="https://beatrizcdsmartins.github.io/landing-page-Sports/index.html">Voltar</a>
+    </div>
+
+
+
+</body>
+
+<style>
+
+@font-face {
+    font-family:'amsterdan';
+    src: url('assets/fonts/NewAmsterdam-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'nue' ;
+    src: url('assets/fonts/UniNeue-BlackItalic.otf') format('opentype');
+    src: url('assets/fonts/UniNeue-ThinItalic.otf') format('opentype');
+    src: url('assets/fonts/UniNeue-HeavyItalic.otf') format('opentype') ; 
+}
+
+@font-face {
+    font-family:'nu' ;
+    src: url('assets/fonts/UniNeue-ThinItalic.otf') format('opentype'); 
+}
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    p{
+
+    font-weight:100;
+    font-family: 'nu';
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: min(35px, 4vmin);
+     color: #ffff10;
+    
+    }
+
+    a{
+
+        font-family: 'nu';
+       font-style:bold;
+        margin-top: 20px;
+        width: 50%;
+        color: #ffff10;
+        background-color: #000000;
+        border: solid 1px #ffff10;
+        padding: 5px;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-size: min(35px, 4vmin);
+    }
+</style>
+
+
+</html>
