@@ -808,6 +808,7 @@ address{
 
 @media screen and (max-width:750px) {
 
+    
 
     .text-desktop{
         display: none;
@@ -829,6 +830,7 @@ address{
 
     .text-container h1{
         line-height: 80%;
+
     }
 
     .text-container a{
@@ -857,12 +859,12 @@ address{
     }
     
     .text-container p, a{
-        font-weight:100;
+        font-weight:900;
         font-family: 'nu';
         font-style: italic;
         letter-spacing: 1px;
         font-size: min(35px, 4vmin);
-        opacity: 0.7;
+        opacity: 1;
     }
     
  
