@@ -3,7 +3,6 @@
     //loading
     function loading() {
     
-    
         document.getElementsByClassName("loading-box")[0].style.display = "none";
         document.getElementsByClassName("content-box")[0].style.display = "block";
     
@@ -14,25 +13,25 @@
     const desktopImage = document.querySelector('.desktop');
 
     girlHover.addEventListener('mouseover', () => {
-        desktopImage.setAttribute('src', './assets/main/rapaz_e_Menina_so_menina.png');
+        desktopImage.setAttribute('src', './../assets/main/rapaz_e_Menina_so_menina.png');
         desktopImage.style.zIndex = '-500';
 
     });
 
     girlHover.addEventListener('mouseleave', () => {
-        desktopImage.setAttribute('src', './assets/main/rapaz_e_Menina2.png');
+        desktopImage.setAttribute('src', './../assets/main/rapaz_e_Menina2.png');
         desktopImage.style.zIndex = '0';
 
     });
 
     manHover.addEventListener('mouseover', () => {
-        desktopImage.setAttribute('src', './assets/main/rapaz_e_Menina_so_rapaz.png');
+        desktopImage.setAttribute('src', './../assets/main/rapaz_e_Menina_so_rapaz.png');
         desktopImage.style.zIndex = '-200';
 
     });
 
     manHover.addEventListener('mouseleave', () => {
-        desktopImage.setAttribute('src', './assets/main/rapaz_e_Menina2.png');
+        desktopImage.setAttribute('src', './../assets/main/rapaz_e_Menina2.png');
         desktopImage.style.zIndex = '0';
 
     });
