@@ -884,10 +884,15 @@ address {
 
 
 
-    .text-desktop, .text-main * {
+    .text-desktop, .text-main {
         display: none;
     }
 
+  .text-left-main *{
+    display: none;
+  }
+
+  
     .txt {
         display: block;
         margin-left: 20px;
