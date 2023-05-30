@@ -209,6 +209,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
+ 
 
 }
 
@@ -357,8 +358,14 @@ main {
     margin-left: 40%;
     margin-bottom: 45%;
 
+    
+  
+
+
 
 }
+
+
 
 
 
@@ -423,22 +430,22 @@ main {
 
 }
 
-/* Adicional-frase */
-
-
-.adicional-phrase {
-    display: none;
-  }
-
 .adicional-phrase{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
     position: relative;
     top: 2rem;
+    height: 100px;
     
  
 }
+
+/* Adicional-frase */
+
+
+
+/*  */
 
 
 .adicional-phrase p{
@@ -456,33 +463,9 @@ main {
     max-width:85%;
 }
 
-#typing-effect::after {
-    content: "|";
-    opacity: 1;
-    margin-left: 10px;
-    display: inline-block;
-    animation: blink .7s infinite;
-}
-
-#phrase-girl-1 {
-    opacity: 0;
-    transition: opacity 1.3s;
-    
-}
-
 
 #phrase-girl-1.visible {
     opacity: 1;
-}
-
-  @keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-   100% {
-        opacity: 1;
-    }
 }
 
 
@@ -509,34 +492,21 @@ main {
 
 }
 
+.adicional-phrase-man{
+    margin-top: 1.5rem;
+}
+
 #typing-effect-man{
     max-width:70%;
     margin-top: 0.5rem;
 }
 
-#typing-effect-man::after {
-    content: "|";
-    opacity: 1;
-    margin-left: 10px;
-    display: inline-block;
-    animation: blink .7s infinite;
-}
 
 #phrase-man-1 {
     max-width:50%;
-    opacity: 0;
-    transition: opacity 1.3s;
   
     
 }
-
-
-#phrase-man-1.visible {
-    opacity: 1;
-}
-
-
-
 
 
 /*black-div*/

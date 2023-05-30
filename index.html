@@ -92,7 +92,7 @@
 
                             <div class="adicional-phrase">
                                 <p id="phrase-girl-1">O primeiro contato com o tênis</p>
-                                <p id="typing-effect"></p>
+                                <p id="typing-effect">Acontece de maneira divertida .</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
 
                                 <div class="adicional-phrase-man">
                                     <p id="phrase-man-1">E completo para você</p>
-                                    <p id="typing-effect-man"></p>
+                                    <p id="typing-effect-man">Desenvolver suas habilidades .</p>
                                 </div>
 
                             </div>
@@ -243,7 +243,7 @@
 
             <h1 class="class-agend">Quero agendar uma aula!</h1>
 
-            <form class="my-form" action="https://formsubmit.co/bm977753@gmail.com" method="POST">
+            <form class="my-form" action="https://formsubmit.co/contato@nakanotenis.com.br" method="POST">
 
                 <input type="hidden" name="_captcha" value="false" id="">
                 <input type="hidden" name="_autoresponse"
@@ -334,118 +334,38 @@
 
 
         const girlMouseElement = document.getElementById('girl-mouse');
-        const phraseGirl1Element = document.getElementById('phrase-girl-1');
+    const phraseGirl1Element = document.getElementById('phrase-girl-1');
+    const typingEffectElement = document.getElementById('typing-effect');
 
-        let firstMouseOver = true;
+    girlMouseElement.addEventListener('mouseover', () => {
+        phraseGirl1Element.style.display = 'block';
+        typingEffectElement.style.display = 'block';
+    });
 
-        girlMouseElement.addEventListener('mouseover', () => {
-            if (firstMouseOver) {
-                phraseGirl1Element.classList.add('visible');
-                firstMouseOver = false;
-            }
-        });
-
-        let animationExecuted = false;
-
-        function typeNextCharacter() {
-
-            if (!animationExecuted) {
-
-                animationExecuted = true;
-
-                const typingElement = document.getElementById('typing-effect');
-
-                const text = "Acontece de maneira divertida .";
-
-                // Variáveis de controle
-                let currentIndex = 0;
-                let typingSpeed = 85;
-
-
-                function typeNextCharacter() {
-
-                    if (currentIndex < text.length) {
-
-                        const nextCharacter = text.charAt(currentIndex);
-
-                        typingElement.textContent += nextCharacter;
-
-
-                        currentIndex++;
-
-
-                        setTimeout(typeNextCharacter, typingSpeed);
-                    }
-                }
-
-
-                typeNextCharacter();
-
-
-                imagemElement.removeEventListener('mouseover', typeNextCharacter);
-            }
-        }
-
-        const imagemElement = document.getElementById('girl-mouse');
-        imagemElement.addEventListener('mouseover', typeNextCharacter);
-
+    girlMouseElement.addEventListener('mouseout', () => {
+        phraseGirl1Element.style.display = 'none';
+        typingEffectElement.style.display = 'none';
+    });
 
         // typing-effect-man
 
+
+        
         const manMouseElement = document.getElementById('man-mouse');
-        const phraseMan1Element = document.getElementById('phrase-man-1');
+    const phraseMan1Element = document.getElementById('phrase-man-1');
+    const typingEffectElementMan = document.getElementById('typing-effect-man');
 
-        let firstMouseOverMan = true;
+    manMouseElement.addEventListener('mouseover', () => {
+        phraseMan1Element.style.display = 'block';
+        typingEffectElementMan.style.display = 'block';
+    });
 
-        manMouseElement.addEventListener('mouseover', () => {
-            if (firstMouseOverMan) {
-                phraseMan1Element.classList.add('visible');
-                firstMouseOverMan = false;
-            }
-        });
+    manMouseElement.addEventListener('mouseout', () => {
+        phraseMan1Element.style.display = 'none';
+        typingEffectElementMan.style.display = 'none';
+    });
 
-        // Variável de controle
-        let animationExecutedMan = false;
-
-        // Função para exibir o próximo caractere
-        function typeNextCharacterMan() {
-
-            if (!animationExecutedMan) {
-
-                animationExecutedMan = true;
-
-
-                const typingElement = document.getElementById('typing-effect-man');
-
-                const text = "Desenvolver suas habilidades.";
-
-                // Variáveis de controle
-                let currentIndex = 0;
-                let typingSpeed = 85;
-
-                // Função para exibir o próximo caractere
-                function typeNextCharacterMan() {
-
-                    if (currentIndex < text.length) {
-
-                        const nextCharacter = text.charAt(currentIndex);
-
-                        typingElement.textContent += nextCharacter;
-
-                        currentIndex++;
-
-                        setTimeout(typeNextCharacterMan, typingSpeed);
-                    }
-                }
-
-                typeNextCharacterMan();
-
-                imagemElement.removeEventListener('mouseover', typeNextCharacterMan);
-            }
-        }
-
-        const imagemElementMan = document.getElementById('man-mouse');
-        imagemElementMan.addEventListener('mouseover', typeNextCharacterMan);
+ 
 
     </script>
 
