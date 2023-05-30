@@ -98,3 +98,4 @@
     const imgs = ['./../assets/scroll/imagem_dupla_002.png', './../assets/scroll/imagem_dupla_003.png', './../assets/scroll/imagem_dupla_001.png'];
     let indic = 0;
 
+

@@ -423,6 +423,121 @@ main {
 
 }
 
+/* Adicional-frase */
+
+
+.adicional-phrase {
+    display: none;
+  }
+
+.adicional-phrase{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    position: relative;
+    top: 2rem;
+    
+ 
+}
+
+
+.adicional-phrase p{
+    font-weight: 600;
+    font-family: 'nu';
+    font-style: italic;
+    background-color: #ffff10;
+   
+    font-size: clamp(0.5em, 1.4vw, 3em);
+   
+
+}
+
+#typing-effect{
+    max-width:85%;
+}
+
+#typing-effect::after {
+    content: "|";
+    opacity: 1;
+    margin-left: 10px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+#phrase-girl-1 {
+    opacity: 0;
+    transition: opacity 1.3s;
+    
+}
+
+
+#phrase-girl-1.visible {
+    opacity: 1;
+}
+
+  @keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+   100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/*MAN*/
+
+.adicional-phrase-man p{
+    font-weight: 600;
+    font-family: 'nu';
+    font-style: italic;
+    background-color: #ffff10;
+   
+    font-size: clamp(0.5em, 1.4vw, 3em);
+   
+
+}
+
+#typing-effect-man{
+    max-width:70%;
+    margin-top: 0.5rem;
+}
+
+#typing-effect-man::after {
+    content: "|";
+    opacity: 1;
+    margin-left: 10px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+#phrase-man-1 {
+    max-width:50%;
+    opacity: 0;
+    transition: opacity 1.3s;
+  
+    
+}
+
+
+#phrase-man-1.visible {
+    opacity: 1;
+}
+
+
+
+
 
 /*black-div*/
 

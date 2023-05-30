@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TR634T3');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TR634T3');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -70,7 +73,7 @@
             <div class="kid-adult-photos">
                 <div class="main-hover">
 
-                    <div class="girl-hover">
+                    <div class="girl-hover" id="girl-mouse">
 
                         <div class="text-main">
 
@@ -86,12 +89,17 @@
                             <div class="container-p-main">
                                 <p>A partir de 4 anos!</p>
                             </div>
+
+                            <div class="adicional-phrase">
+                                <p id="phrase-girl-1">O primeiro contato com o tênis</p>
+                                <p id="typing-effect"></p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="man-hover">
 
-                       
+                    <div class="man-hover" id="man-mouse">
+
+
                         <div class="text-main right-main">
 
                             <div class="text-left-main">
@@ -107,13 +115,16 @@
                                 <div>
                                     <p>um esporte desafiador</p>
                                 </div>
-                                
+
+                                <div class="adicional-phrase-man">
+                                    <p id="phrase-man-1">E completo para você</p>
+                                    <p id="typing-effect-man"></p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
                 <img class="desktop" src="rapaz_e_Menina2.png" alt="rapaz e menina">
                 <img class="mobile" src="./assets/main/rapaz_menina_mobile.png">
@@ -316,6 +327,127 @@
     <script src="./scripts.js/script-slick.js"> </script>
     <script src="./scripts.js/slider-script.js"> </script>
     <script src="./scripts.js/script.js"></script>
+
+    <script>
+
+        //Typing Effect -girl
+
+
+        const girlMouseElement = document.getElementById('girl-mouse');
+        const phraseGirl1Element = document.getElementById('phrase-girl-1');
+
+        let firstMouseOver = true;
+
+        girlMouseElement.addEventListener('mouseover', () => {
+            if (firstMouseOver) {
+                phraseGirl1Element.classList.add('visible');
+                firstMouseOver = false;
+            }
+        });
+
+        let animationExecuted = false;
+
+        function typeNextCharacter() {
+
+            if (!animationExecuted) {
+
+                animationExecuted = true;
+
+                const typingElement = document.getElementById('typing-effect');
+
+                const text = "Acontece de maneira divertida .";
+
+                // Variáveis de controle
+                let currentIndex = 0;
+                let typingSpeed = 85;
+
+
+                function typeNextCharacter() {
+
+                    if (currentIndex < text.length) {
+
+                        const nextCharacter = text.charAt(currentIndex);
+
+                        typingElement.textContent += nextCharacter;
+
+
+                        currentIndex++;
+
+
+                        setTimeout(typeNextCharacter, typingSpeed);
+                    }
+                }
+
+
+                typeNextCharacter();
+
+
+                imagemElement.removeEventListener('mouseover', typeNextCharacter);
+            }
+        }
+
+        const imagemElement = document.getElementById('girl-mouse');
+        imagemElement.addEventListener('mouseover', typeNextCharacter);
+
+
+        // typing-effect-man
+
+        const manMouseElement = document.getElementById('man-mouse');
+        const phraseMan1Element = document.getElementById('phrase-man-1');
+
+        let firstMouseOverMan = true;
+
+        manMouseElement.addEventListener('mouseover', () => {
+            if (firstMouseOverMan) {
+                phraseMan1Element.classList.add('visible');
+                firstMouseOverMan = false;
+            }
+        });
+
+        // Variável de controle
+        let animationExecutedMan = false;
+
+        // Função para exibir o próximo caractere
+        function typeNextCharacterMan() {
+
+            if (!animationExecutedMan) {
+
+                animationExecutedMan = true;
+
+
+                const typingElement = document.getElementById('typing-effect-man');
+
+                const text = "Desenvolver suas habilidades.";
+
+                // Variáveis de controle
+                let currentIndex = 0;
+                let typingSpeed = 85;
+
+                // Função para exibir o próximo caractere
+                function typeNextCharacterMan() {
+
+                    if (currentIndex < text.length) {
+
+                        const nextCharacter = text.charAt(currentIndex);
+
+                        typingElement.textContent += nextCharacter;
+
+                        currentIndex++;
+
+                        setTimeout(typeNextCharacterMan, typingSpeed);
+                    }
+                }
+
+                typeNextCharacterMan();
+
+                imagemElement.removeEventListener('mouseover', typeNextCharacterMan);
+            }
+        }
+
+        const imagemElementMan = document.getElementById('man-mouse');
+        imagemElementMan.addEventListener('mouseover', typeNextCharacterMan);
+
+    </script>
 
 </body>
 
