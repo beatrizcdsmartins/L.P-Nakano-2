@@ -337,6 +337,9 @@
     const phraseGirl1Element = document.getElementById('phrase-girl-1');
     const typingEffectElement = document.getElementById('typing-effect');
 
+    phraseGirl1Element.style.display = 'none';
+    typingEffectElement.style.display = 'none';
+
     girlMouseElement.addEventListener('mouseover', () => {
         phraseGirl1Element.style.display = 'block';
         typingEffectElement.style.display = 'block';
@@ -349,11 +352,15 @@
 
         // typing-effect-man
 
+        
 
         
         const manMouseElement = document.getElementById('man-mouse');
     const phraseMan1Element = document.getElementById('phrase-man-1');
     const typingEffectElementMan = document.getElementById('typing-effect-man');
+
+    phraseMan1Element.style.display = 'none';
+    typingEffectElementMan.style.display = 'none';
 
     manMouseElement.addEventListener('mouseover', () => {
         phraseMan1Element.style.display = 'block';
