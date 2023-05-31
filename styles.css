@@ -880,6 +880,13 @@ address {
 
 }
 
+@media (orientation: landscape) {
+    body {
+      transform: rotate(90deg);
+      transform-origin: left top;
+    }
+
+
 @media screen and (max-width:1470px) {
 
     .texts-arrows p {
@@ -1192,5 +1199,7 @@ address {
     .texts-apresentation {
         top: 40%;
     }
+
+}
 
 }
