@@ -127,6 +127,7 @@ header {
     width: max(90%, 400px);
     padding: 10px;
     margin-left: 10px;
+
 }
 
 
@@ -880,12 +881,6 @@ address {
 
 }
 
-@media (orientation: landscape) {
-    body {
-      transform: rotate(90deg);
-      transform-origin: left top;
-    }
-
 
 @media screen and (max-width:1470px) {
 
@@ -1199,7 +1194,5 @@ address {
     .texts-apresentation {
         top: 40%;
     }
-
-}
 
 }
